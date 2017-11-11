@@ -1,0 +1,55 @@
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.portfolio-images-block {
+
+	width: 700px;
+	height:600px;
+	margin: 0 auto;
+	padding-top: 5%;
+
+
+}
+
+.portfolio-images-block img{
+
+	width: 150px;
+	height:150px;
+	/**margin: 0 auto;**/
+	padding: 36px;
+	margin-bottom: 0px;
+
+}
+
+.portfolio-images {
+	display: inline-block;
+}
+
+
+
+.portfolio-images p{
+	text-align: center;
+	margin-top: 0px;
+	color: white;
+	font-style: oblique;
+}
+
+.portfolio-images p:hover
+{
+	color: #EC3025;
+	cursor: pointer;
+}
+
+
+.container h1, .container p {
+  color: #fff;
+}

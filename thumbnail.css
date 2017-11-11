@@ -1,0 +1,43 @@
+.thumbnail > img,
+.thumbnail a > img,
+ {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+}
+
+
+.col-xs-2 {
+  width: 16.66666667%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+
+.row:before,
+.row:after {
+  content: " ";
+ display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+
+.thumbnail .caption {
+  padding: 9px;
+  color: #c8c8c8;
+}
+
+.poster_img {
+  width: 100%;
+}
+.poster_img:hover {
+  opacity: 0.3;
+}
