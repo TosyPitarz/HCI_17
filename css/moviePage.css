@@ -131,3 +131,12 @@ img:hover {
 .carousel-inner p {
   text-transform: uppercase;
 }
+
+.py-5 {
+  background-color: #000;
+
+}
+
+/*.py-5 p {
+  color: #000;
+}*/
