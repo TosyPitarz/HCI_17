@@ -120,6 +120,7 @@ img:hover {
   margin-top: 45px;
   margin-left: 14px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 /*REMOVE TOP GAP FROM CAROUSEL*/
