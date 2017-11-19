@@ -11,7 +11,7 @@ body {
 }*/
 
 .sections {
-  background-color: #2B103C;
+  background-color: #000;
 
   /*background-image: url("../image/back5.jpg");*/
 }
@@ -119,5 +119,14 @@ img:hover {
 .butt {
   margin-top: 45px;
   margin-left: 14px;
+  text-transform: uppercase;
+}
+
+/*REMOVE TOP GAP FROM CAROUSEL*/
+.row {
+  margin-top: -23px;
+}
+
+.carousel-inner p {
   text-transform: uppercase;
 }
