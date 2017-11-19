@@ -1,0 +1,123 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #234099;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}*/
+
+.sections {
+  background-color: #2B103C;
+
+  /*background-image: url("../image/back5.jpg");*/
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+/*  GRID OF SEVEN  */
+.span_7_of_7 {
+	width: 100%;
+}
+
+.span_6_of_7 {
+  	width: 85.48%;
+}
+
+.span_5_of_7 {
+  	width: 70.97%;
+}
+
+.span_4_of_7 {
+  	width: 56.45%;
+}
+
+.span_3_of_7 {
+  	width: 41.94%;
+}
+
+.span_2_of_7 {
+  	width: 27.42%;
+}
+
+.span_1_of_7 {
+  	width: 12.91%;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_7, .span_2_of_7, .span_3_of_7, .span_4_of_7, .span_5_of_7, .span_6_of_7, .span_7_of_7 { width: 100%; }
+}
+
+
+
+/*ELEMENTS*/
+.sec-1 p, .sec-2 p, .sec-3 p{
+  text-align: center;
+  color: #fff;
+  /*border-style: dashed;*/
+}
+
+
+
+.sec-1 h1, .sec-2 h1, .sec-3 h1 {
+  color: white;
+  padding-top: 20px;
+}
+
+img:hover {
+  background-image: url("image/blur.png");
+  opacity: .4;
+  transition: .2s ease-in-out;
+  backface-visibility: hidden;
+
+}
+
+/*.section:hover img{
+  background-image: url("image/blur.png");
+}*/
+
+.section:hover img {
+  /*position:absolute;
+  width: 48px;
+  height: 48px;*/
+  /*z-index: 100;*/
+  background: transparent url('image/blur.png') no-repeat;
+  cursor: pointer;
+}
+
+.butt {
+  margin-top: 45px;
+  margin-left: 14px;
+  text-transform: uppercase;
+}
