@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+
 	$(".movie-image").hover(function(){
 		$(this).find(".play").show();
 
@@ -9,7 +9,7 @@ $(document).ready(function(){
 		$(this).find(".play").hide();
 	});
 
-
+// TODO: fix old movie title on the play button
 	$(".blink").focus(function() {
             if(this.title==this.value) {
                 this.value = '';
@@ -17,7 +17,7 @@ $(document).ready(function(){
         })
         .blur(function(){
             if(this.value=='') {
-                this.value = this.title;                    
+                this.value = this.title;
 			}
 		});
 });

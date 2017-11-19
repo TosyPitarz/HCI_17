@@ -257,11 +257,14 @@ h1#logo a {
 	float:left;
 	display:inline;
 }
+
 .box .movie {
 	width:152px;
 	float:left;
 	padding-right:12px;
 	margin-right:11px;
+	/*margin-right: 5%;
+	margin-left: 5%;*/
 
 }
 
@@ -270,7 +273,8 @@ h1#logo a {
 	float:left;
 	width:152px;
 	height:214px;
-	position:relative;
+	display: inline-block;
+	/*position:relative;*/
 }
 
 .movie-image img {
@@ -278,14 +282,18 @@ h1#logo a {
 	height:214px;
 }
 
-.movie-image a {
+
+
+
+
+/*.movie-image a {
 	float:left;
 	display:inline;
 	width:152px;
 	height:214px;
 	position:relative;
 	z-index:2;
-}
+}*/
 
 .play {
 	position:absolute;
@@ -343,7 +351,7 @@ h1#logo a {
 	padding-left:12px;
 	float:right;
 }
-#news {
+/*#news {
 	width:460px;
 	float:left;
 }
@@ -376,14 +384,14 @@ h1#logo a {
 }
 #coming .content h4 {
 	padding-bottom:3px;
-}
+}*/
 .content {
 	padding-bottom:28px;
 }
-.content .date {
+/*.content .date {
 	font-size:10px;
 	color:#fff;
-}
+}*/
 .content img {
 	float:left;
 	width:68px;
@@ -397,7 +405,8 @@ h1#logo a {
 .content a {
 	font-size:11px;
 }
-#footer {
+
+/*#footer {
 	padding:15px 0 0 0;
 	font-size:10px;
 }
@@ -419,4 +428,4 @@ h1#logo a {
 }
 #footer .rf {
 	float:right;
-}
+}*/
