@@ -174,5 +174,9 @@ img:hover {
 
 .foot p {
   margin-top: 6px;
-  
+
+}
+
+.footer-grid email{
+  color: red;
 }
