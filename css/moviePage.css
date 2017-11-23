@@ -155,3 +155,28 @@ img:hover {
 /*.py-5 p {
   color: #000;
 }*/
+
+
+.images {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+}
+
+.foot {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+.foot p {
+  margin-top: 6px;
+
+}
+
+.footer-grid email{
+  color: red;
+}
