@@ -53,3 +53,11 @@
 .container h1, .container p {
   color: #fff;
 }
+
+
+/*ACTION PAGE CSS*/
+.page {
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
