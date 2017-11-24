@@ -8,7 +8,7 @@
 
 $(document).ready(function(){
     $(".play").click(function(){
-        document.location.href = "movie_player.html";
+        document.location.href = "pages/playPage.html";
     });
 });
 

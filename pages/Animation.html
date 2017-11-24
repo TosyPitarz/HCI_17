@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>M17: Animation Movies</title>
+
+
+
+    <!-- Bootstrap -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../pagesCss/stylesheet1.css" media="all">
+
+
+    <link href="../pagesCss/footer.css" rel="stylesheet" type="text/css" />
+    <style>
+        .carusel_img {
+            width: 100%;
+            max-height: 500px;
+        }
+        
+        .poster_img {
+            width: 100%;
+        }
+        
+        .poster_img:hover {
+            opacity: 0.3;
+        }
+        
+        #search_bar {
+            display: inline-block;
+        }
+        
+        #notification {}
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#myCarousel').carousel({
+                interval: 10000
+            })
+
+            $('#myCarousel').on('slid.bs.carousel', function() {
+                //alert("slid");
+            });
+
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="main">
+
+        <div class="main-bg">
+
+
+            <div class="main-width">
+
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                        <span class="icon-bar"></span>
+                                                    </button>
+                            <a class="navbar-brand" href="../index.html">
+
+                                <img src="../image/logo5.png" alt="" width="80" height="20"></a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav ">
+                                <li><a href="../index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                                <li><a href="../pages/nowTrending.html"><span class="glyphicon glyphicon-bullhorn"></span> Now Trending</a></li>
+                                <li><a href="../pages/tvShows.html"><span class="glyphicon glyphicon-cd"></span> TV Shows</a></li>
+                                <li><a href="../pages/latestMovies.html"><span class="glyphicon glyphicon-film"></span> Latest Movies</a></li>
+                                <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="../pages/Action.html" class="action" id="action">Action</a></li>
+                                        <li><a href="../pages/Adventure.html" class="adventure" id="adventure">Adventure</a></li>
+                                        <li><a href="../pages/Animation.html" class="animation" id="animation">Animation</a></li>
+                                        <li><a href="../pages/Comedy.html" class="comedy" id="comedy">Comedy</a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <form id="form1" class="form-inline my-2 my-lg-0 mr-lg-2 navbar-form navbar-right">
+                                <div class="input-group">
+                                    <input class="form-control" type="text" placeholder="Search Movies...">
+                                    <span class="input-group-btn">
+                                               <button class="btn btn-danger" type="submit">
+                                                 <i class="fa fa-search"></i>
+                                               </button>
+                                             </span>
+                                </div>
+                            </form>
+                            <ul class="nav navbar-nav navbar-right" id="secmenu">
+                                <li><a href="../pages/helpPage.html"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#contactusModal"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+
+                                <!-- Contact Us Modal -->
+                                <div class="modal fade" id="contactusModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content" style="background: #404040">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white; opacity: 0.9"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel" style="color:white; opacity: 0.9">Contact Us</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p style="color:white; opacity: 0.9"><strong>Email:</strong> HCI17@M17.com </p>
+                                                <p style="color:white; opacity: 0.9"><strong>Phone:</strong> 204-999-9999</p>
+                                                <p style="color:white; opacity: 0.9"><strong>Address:</strong> ... Winnipeg Manitoba</p>
+                                                <div class="divider"></div>
+                                                <h3 style="color:white; opacity: 0.9">Send us an Email</h3>
+
+                                                <!-- send email form in modal -->
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label for="input_subject" class="col-sm-2 control-label" style="color:white; opacity: 0.9">Subject:</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="text" class="form-control" id="input_subject" placeholder="Subject">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="input_text" class="col-sm-2 control-label" style="color:white; opacity: 0.9">Text:</label>
+                                                        <div class="col-sm-10">
+                                                            <textarea class="form-control" rows="3" id="input_text"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-danger"><i class="fa fa-envelope-o" style="margin-right: 10%;"></i>Send</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <li class="" id="loginMenu"><a href="../pages/login_signup.html"><span class="glyphicon glyphicon-log-in"></span> Login/Signup</a></li>
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
+                </nav>
+
+                <h1 style="color:white;">Animation </h1>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <div class="thumbnail">
+                            <a href="../pages/beautyBeast.html"><img src="../images/2.jpg" class="poster_img" alt="Beauty and the Beast"></a>
+                            <div class="caption">
+                                <h4 align="center"><a href="../pages/beautyBeast.html" style="color:white;">Beauty_Beast</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail">
+                            <a href="../pages/perfume.html"><img src="../images/7.jpg" class="poster_img" alt="Perfume"></a>
+                            <div class="caption">
+                                <h4 align="center"><a href="../pages/perfume.html" style="color:white;">Perfume</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail">
+                            <a href="../pages/priest.html"><img src="../images/8.jpg" class="poster_img" alt="priest"></a>
+                            <div class="caption">
+                                <h4 align="center"><a href="../pages/priest.html" style="color:white;">Priest</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail">
+                            <a href="../pages/harryPotter.html"><img src="../images/5.jpg" class="poster_img" alt="harryPotter"></a>
+                            <div class="caption">
+                                <h4 align="center"><a href="../pages/harryPotter.html" style="color:white;">Harry Potter</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail">
+                            <a href="../pages/mag7.html"><img src="../images/11.jpg" class="poster_img" alt="Mag 7"></a>
+                            <div class="caption">
+                                <h4 align="center"><a href="../pages/mag7.html" style="color:white;">Magnificent 7</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="thumbnail">
+                            <a href="../pages/playPage.html"><img src="../images/3.jpg" class="poster_img" alt="Divergent"></a>
+                            <div class="caption">
+                                <h4 align="center"><a href="../pages/playPage.html" style="color:white;">Divergent</a></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="footer-grid">
+                    <h3>Navigation</h3>
+                    <ul class="list1">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="radio.html">Now Trending</a></li>
+                        <li><a href="browse.html">TV Shows</a></li>
+                        <li><a href="radio.html">Latest Movies</a></li>
+                        <li><a href="blog.html">Categories</a></li>
+                        <li><a href="contact.html">Help</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="contact.html">Login/Signup</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid">
+                    <h3>Account info</h3>
+                    <ul class="list1">
+                        <li><a href="#" data-toggle="modal" data-target="#myModal5">Your Account</a></li>
+                        <li><a href="#">Personal information</a></li>
+                        <li><a href="#">Addresses</a></li>
+                        <li><a href="#">Discount</a></li>
+                        <li><a href="#">Orders history</a></li>
+                        <li><a href="#">Addresses</a></li>
+                        <li><a href="#">Search Terms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid">
+                    <h3>Our Support</h3>
+                    <ul class="list1">
+                        <li><a href="contact.html">Site Map</a></li>
+                        <li><a href="#">Search Terms</a></li>
+                        <li><a href="#">Advanced Search</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Addresses</a></li>
+                    </ul>
+                </div>
+                <div class="footer-grid">
+                    <h3>Newsletter</h3>
+                    <p class="footer_desc">Nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat</p>
+                    <div class="search_footer">
+                        <form>
+                            <input type="text" placeholder="Email...." required="">
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-grid footer-grid_last">
+                    <h3>About Us</h3>
+                    <p class="footer_desc">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat enim ad minim veniam,.</p>
+                    <p class="f_text">Phone: &nbsp;&nbsp;&nbsp;204-999-9999</p>
+                    <p class="email">Email : &nbsp;<span><a href="mailto:mail@example.com">HCI17@M17.com</a></span></p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+
+        <div class="foot btn-danger">
+            <p>&copy; 2017 Movie17. All Rights Reserved </p>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <script src="myscript.js"></script> -->
+    <!-- Script to play/pause the trailer on the movie page -->
+    <script>
+        var youtubeFunc = '';
+        var outerDiv = document.getElementById("trailerModal");
+        var youtubeIframe = outerDiv.getElementsByTagName("iframe")[0].contentWindow;
+        $('#trailerModal').on('hidden.bs.modal', function(e) {
+            youtubeFunc = 'pauseVideo';
+            youtubeIframe.postMessage('{"event":"command","func":"' + youtubeFunc + '","args":""}', '*');
+        });
+        $('#trailerModal').on('shown.bs.modal', function(e) {
+            youtubeFunc = 'playVideo';
+            youtubeIframe.postMessage('{"event":"command","func":"' + youtubeFunc + '","args":""}', '*');
+        });
+    </script>
+
+    <script>
+        $('#form1').submit(function(event) {
+            event.preventDefault();
+            location.assign("searchResult.html");
+        })
+    </script>
+</body>
+
+</html>

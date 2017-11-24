@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #191919 !important;
+}
+
+.thumbnail {
+    background: #191919  !important;
+}
+
+
+/* style for login and signup box */
+
+.loginBox {
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.signupBox {
+    position: absolute;
+    top: 520px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.loginBox h2,
+.signupBox h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"],
+.signupBox input[type="text"],
+.signupBox input[type="password"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"],
+.signupBox input[type="text"],
+.signupBox input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    color: #ffffff;
+    height: 30px;
+    font-size: 16px;
+}
+
+ ::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+
+.loginBox input[type="submit"],
+.signupBox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    background: #be4747;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.loginBox input[type="submit"]:hover,
+.signupBox input[type="submit"]:hover {
+    background: #efed40;
+    color: #262626;
+}
+
+.loginBox a,
+.signupBox a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.loginBox p,
+.signupBox p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* style for drop-down */
+
+.dropdown-menu {
+    background-color: black;
+    opacity: .8;
+    text-align: center;
+}
+
+
+/* comment section */
+
+.comment-section-container {
+    padding: 4px;
+}
+
+.comment-section-author {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.comment-section-author .comment-section-name {
+    margin-left: 4px auto;
+}
+
+.comment-section-author .comment-section-name p {
+    margin-bottom: 0;
+}
+
+.comment-section-box {
+    padding: 4px;
+}
